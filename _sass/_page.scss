@@ -108,6 +108,7 @@ body {
 	width: 200%; 
 	height: 200%;
 	min-height: 400px;
+   max-height: 450px;
 	overflow: hidden;
 	&:after {
 		content: '';
