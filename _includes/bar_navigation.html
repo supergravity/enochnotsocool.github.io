@@ -1,0 +1,14 @@
+<ul class="topbar">	
+   <li><a href="{{ site.url }}/">Home</a></li>
+	<li><a href="{{ site.url }}/posts/">Posts by date</a></li>
+	<li><a href="{{ site.url }}/tags/">Posts by Tags</a></li>
+	{% for link in site.data.navigation %}
+      {% if link.url contains 'http' %}
+	      {% assign domain = '' %}
+	      {% else %}
+	      {% assign domain = site.url %}
+	    {% endif %}
+	    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+	  {% endfor %}
+</ul><!-- /.dl-menuwrapper -->
+
