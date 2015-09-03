@@ -32,6 +32,7 @@ body {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
+   max-height: 500px;
 }
 .header-title {
 	text-align: center;
@@ -108,7 +109,7 @@ body {
 	width: 200%; 
 	height: 200%;
 	min-height: 400px;
-   max-height: 800px;
+   max-height: 500px;
 	overflow: hidden;
 	&:after {
 		content: '';
