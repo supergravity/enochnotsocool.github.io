@@ -104,10 +104,11 @@ body {
 }
 .entry-image {
 	position: relative;
+   top: -50%;
+	left: -50%; 
 	width: 200%; 
 	height: 200%;
 	min-height: 400px;
-   max-height: 500px;
 	overflow: hidden;
 	&:after {
 		content: '';
