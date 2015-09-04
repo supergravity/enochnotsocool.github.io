@@ -10,7 +10,7 @@ comments: false
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
     {% if forloop.first %}
-    <article>
+    <article class="archive">
       <h2 id="{{ this_year }}-ref">{{ this_year }}</h2>
       <ul>
     {% endif %}
@@ -24,7 +24,7 @@ comments: false
         {% if this_year != next_year %}
           </ul>
         </article>
-        <article>
+        <article class="archive">
           <h2 id="{{ next_year }}-ref" class="year-heading">{{next_year}}</h2>
           <ul>
         {% endif %}

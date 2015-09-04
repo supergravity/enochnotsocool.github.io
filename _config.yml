@@ -1,29 +1,28 @@
-title:            Site Title
-description:      Describe your website here.
-disqus_shortname: hpstrtheme
+title:            E_ N_ S_ C_ Docs.
+description:      Writing down various notes and thoughts picked up
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url:              http://enochnotsocool.github.io/
+url:              
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           ENSC
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
+  bio:            "A want-to-be Physics with a strange liking for computing"
+  email:          enochnotsocool@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
-  facebook:       
-  github:         
+  facebook:       enochchen123
+  github:         enochnotsocool
   stackexchange:  
   linkedin:       
   instagram:      
   flickr:         
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
+  google_plus:    +110026444052053563554
 
 # Background image to be tiled on all pages
 background: 
