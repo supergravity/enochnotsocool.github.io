@@ -16,16 +16,19 @@ What is it that this platform is chosen among the others.
 
 # What I wanted
 With the abundance of social media, there seems to be no end to place to post personal thoughts and whatnot on the internet. 
-I all ready have facebook, google+ and plurk, so why go out to seek a new platform? 
-What social media fails to porvide for me is the ability to organize and navigate the post efficiently,
-to be able to find previous post on a certain topic easily, since I would also want to post some more aesthetically appealing work logs that I could 
-go back to if I ever felt the need in the future. Also the flexibility to stylize my website would also a bit plus.
+I all ready have [facebook](https://www.facebook.com), [google+](https://www.google.com/) and [plurk](https://www.plurk.com/), 
+so why go out to seek a new platform? 
+
+What social media fails to provide for me is the ability to organize and navigate the post efficiently,
+to be able to find previous post on a certain topic easily, since I would also want to post some more aesthetically appealing work logs 
+that I would want to go back to in the future. Also the flexibility to stylize my website would also a bit plus.
 
 But wouldn't blogging platforms such as wordpress, blogger and many others blogging platforms be sufficient? 
 Here comes the more interesting part in my search for the platform of choice.
 Since I'm a bit of a nerd, I would like the platforms to provide: 
 
-* Post latex style equation, Such as:
+* Post latex style equation, like:
+
 $$
 E^2 = p^2c^2 + m^2 c^4 
 $$
@@ -40,11 +43,20 @@ int main( int argc, char argv[][]){
 {% endhighlight %}
 
 on posts easily and efficiently. Also for the framework of the website:
-* Direct access to any appearance changes to the website
+
+* Direct access to any appearance changes to the website. Preferably through text interface and not GUI. 
 * Could be hosted offline for personal usage if desired.
+
 And finally, as an added option:
+
 * Command lined based editing and deploying
 
+Of course, all of this could be achieve by writing a fully-fledged dynamic website, 
+but I'm not wanting to go though this sort of effort just to blog.
+Also I lack the resources to host a website publicly, so I began browsing around to find what will fit my need.
+
+
+## What I came across:
 The first two are satisfiable with git-flavoured markdown that is used to write readme files on [GitHub](https://github.com), 
 also I have a rather pleasant experience of using markdown being much simple to use that raw HTML or latex for fast text editing. 
 To began browsing for blogging solutions with markdown. A pondered a bit at the solutions such as Ghost, Dropplet and Logdown, 
@@ -59,6 +71,8 @@ Finally, I came across the service that I have been using for quite some time: G
 And rather than the ''blogging with markdown'' solution that I had been looking for, I realized that what I wanted is exactly what GitHub pages 
 provided: Static website generators.
 
+
+## The solution?
 Information on a post/page would be stored in plain text format on the top of the text file, 
 and the generator uses this information to generate HTML files that would be passed to the browser. 
 No heavy duty databased software would be required during the website browsing, only (possibly) during the generation process.
