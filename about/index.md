@@ -11,7 +11,7 @@ modified: 2014-12-24
 
 Finally, I have settle on a media I will be using to document and display my personal thoughts! 
 
-## Contents
+# Contents
 This is a website that I will be using the record random thoughts and note for both personal, work and/or hobby related topics.
 Everything on this website will be public, thus I will avoid using specific names of individuals,
 and also avoid posting sensitive, work related results directly on this website.
@@ -23,7 +23,7 @@ If however, you find a post with sensitive personal or professional contents tha
 in-appropriate, outdated, or controversial in accuracy, contact me immediately, and I will attempt to update/remove the content as fast as I can.
 
 
-## Commenting
+# Commenting
 Commenting on any post is welcome (you will need a google+ account to be able to post comments).
 While I wouldn't remove any comments, be sure to keep in mind that you are still communicating with a human being rather that works on your screen, 
 and treat everyone else as a decent human being should.

@@ -1,4 +1,4 @@
-title:            E_ N_ S_ C_ Docs.
+title:            NotSoCool Doodles 
 description:      Writing down various notes and thoughts picked up
 reading_time:     true
 words_per_minute: 200
@@ -10,7 +10,7 @@ url:
 owner:
   name:           ENSC
   avatar:         avatar.jpg
-  bio:            "A want-to-be Physics with a strange liking for computing"
+  bio:            "A want-to-be Physicist with a strange liking for computing"
   email:          enochnotsocool@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
@@ -21,7 +21,6 @@ owner:
   instagram:      
   flickr:         
   tumblr:         
-  # google plus id, include the '+', eg +mmistakes
   google_plus:    +110026444052053563554
 
 # Background image to be tiled on all pages
@@ -34,7 +33,7 @@ google_verify:
 bing_verify:         
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Taipei
 future:      true
 highlighter: pygments
 markdown:    kramdown
