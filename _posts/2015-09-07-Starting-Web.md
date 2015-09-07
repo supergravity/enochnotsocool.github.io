@@ -24,8 +24,22 @@ go back to if I ever felt the need in the future. Also the flexibility to styliz
 But wouldn't blogging platforms such as wordpress, blogger and many others blogging platforms be sufficient? 
 Here comes the more interesting part in my search for the platform of choice.
 Since I'm a bit of a nerd, I would like the platforms to provide: 
-* Post latex style equation 
+* Post latex style equation
+
+Such as:
+$$
+E^2 = p^2c^2 + m^2 c^4 
+$$
+
 * Syntax aware code snippets
+{% highlight c++ %}
+#include <stdio.h>
+int main( int argc, char argv[][]){
+   printf("Hello World\n");
+   return 0;
+}
+{% endhighlight %}
+
 on posts easily and efficiently. Also for the framework of the website:
 * Direct access to any appearance changes to the website
 * Could be hosted offline for personal usage if desired.
