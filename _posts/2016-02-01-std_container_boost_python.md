@@ -5,9 +5,9 @@ description: A simple recipe for getting std containers in boost python
 tags: [recipes, c++, python, boost]
 modified: 2016-02-01 
 image:
-  feature: abstract-7.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  feature: code_head_1.png
+  credit: ensc
+  creditlink:
 ---
 
 [Boost/python](http://www.boost.org/doc/libs/1_60_0/libs/python/doc/html/index.html), a small quirk is that
