@@ -1,9 +1,10 @@
 <script>
-var width = $(".entry-content").width() - 20;
+var width = $(".entry-content").width()-20;
 gapi.comments.render('comments', {
    href: window.location,
    width: width,
    first_party_property: 'BLOGGER',
-   view_type: 'FILTERED_POSTMOD'
+   view_type: 'FILTERED_POSTMOD',
+   theme: 'dark'
 });
 </script>

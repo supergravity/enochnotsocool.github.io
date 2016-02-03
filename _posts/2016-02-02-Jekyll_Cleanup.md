@@ -3,11 +3,11 @@ layout: post
 title: "Jekyll Clean up"
 description: "Some code concerning cleaning up my personal site"
 tags: [Jekyll, recipes ]
-modified: 2016-02-02 
+modified: 2016-02-03 
 image:
   feature: thoughts.jpg
   credit: ensc
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  creditlink: 
 ---
 
 It's been a while since I have had the time to puts some content on this site, might as well begin by clearing 
@@ -36,11 +36,18 @@ cp ../temp.py pygments/styles/
 ./pygmentize -S temp -f html -a .highlight > temp.css
 ~~~
 
-## Generation of own header?
-Still very far behind on idea's and I don't think I will be able to make an overall look and feel for the various categories 
-of posts throughout this blog... 
+## Generating My Theme
+I when with the grey-orange-purple theme that appears in the editing view of markdown files in my vim setup.
+
+I'm also attempting to generate my own banners, but I am still very far behind on idea's and I don't think I will 
+be able to make an overall look and feel for the various categories of posts throughout this blog... 
 
 Still, I will make what comes to mind. Hopefully they will turn out to look OK :)
+
+Undoubtedly there are numerous bugs that I didn't manage to clear up, and there is the glaring problem with the google 
+commenting system, If you notice any inconsistencies or find a fix for the google comment renderer hat could fit the 
+theme more please let me know :)
+
 
 ## Removing old posts?
 Right now, I am still not very familiar with Jekyll and the pages serve as much of a tutorial for me as they did a few months ago.

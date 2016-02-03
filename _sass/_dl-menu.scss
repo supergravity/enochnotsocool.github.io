@@ -19,7 +19,7 @@
 	button {
 		top: 0;
 		left: 0;
-		background: $comp-color;
+		background: $bg-main;
 		border: none;
 		width: 48px;
 		height: 45px;
@@ -29,7 +29,7 @@
 		cursor: pointer;
 		outline: none;
 		@include border-radius(0,3px,0,0);
-		opacity: 0.6;
+		opacity: 0.9;
 		@media #{$medium} {
 			@include border-radius(3px,3px,3px,3px);
 		}
@@ -37,19 +37,19 @@
 	button:hover,
 	button.dl-active,
 	ul {
-		background: #aaa;
+		background: $bg-main;
 	}
 	button:after {
 		content: '';
 		position: absolute;
 		width: 68%;
 		height: 5px;
-		background: $white;
+		background: $bg-main;
 		top: 10px;
 		left: 16%;
 		box-shadow: 
-			0 10px 0 $white, 
-			0 20px 0 $white;
+			0 10px 0 $bg-main, 
+			0 20px 0 $bg-main;
 	}
 	button.dl-active {
 		display: none;
@@ -60,19 +60,21 @@
 		-webkit-transform-style: preserve-3d;
 		-moz-transform-style: preserve-3d;
 		transform-style: preserve-3d;
+      background-color: $bg-main;
 	}
 	li {
+      background-color: $bg-main;
 		position: relative;
 		h4 {
 			margin:0;
 			padding: 15px 20px 0;
-			color: rgba($white,0.9);
+			color: rgba($text-color,0.9);
 		}
 		p {
 			margin: 0;
 			padding: 15px 20px;
 			@include font-rem(14);
-			color: rgba($white,0.8);
+			color: rgba($text-color,0.8);
 			font-weight: 300;
 			a {
 				display: inline;
@@ -90,12 +92,12 @@
 			@include font-rem(14);
 			line-height: 20px;
 			font-weight: 400;
-			color: $white;
+			color: $text-color;
 			outline: none;
 		}
 		&.dl-back > a {
 			padding-left: 30px;
-			background: rgba(0,0,0,0.2);
+			background: rgba(0,0,0,0.9);
 		}
 		&.dl-back:after,
 		> a:not(:only-child):after {
@@ -103,7 +105,7 @@
 			top: 0;
 			line-height: 50px;
 			font-family: 'fontawesome';
-			color: $white;
+			color: $text-color;
 			speak: none;
 			-webkit-font-smoothing: antialiased;
 			content: "\f105";
@@ -315,7 +317,7 @@ All this is done for any sub-level being entered.
 }
 /* No Touch Fallback */
 .no-touch .dl-menuwrapper li a:hover {
-	background: rgba(255,248,213,0.1);
+	background: rgba($bg-main,0.8);
 }
 /* No JS Fallback */
 .no-js {
@@ -335,6 +337,7 @@ All this is done for any sub-level being entered.
 		-webkit-transform: none;
 		-moz-transform: none;
 		transform: none;
+      background-color: $bg-main
 	}
 	.dl-menuwrapper li .dl-submenu {
 		display: block;
@@ -343,7 +346,7 @@ All this is done for any sub-level being entered.
 		display: none;
 	}
 	.dl-menuwrapper li > a:not(:only-child) {
-		background: rgba(0,0,0,0.1);
+		background: rgba(0,0,0,0.8);
 	}
 	.dl-menuwrapper li > a:not(:only-child):after {
 		content: '';

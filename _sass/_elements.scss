@@ -67,76 +67,76 @@ svg:not(:root) {
   padding: 8px 20px;
   @include font-rem(14);
   background-color: $primary;
-  color: $white;
+  color: $bg-main;
   border-width: 2px !important;
   border-style: solid !important;
   border-color: $primary;
   @include rounded(3px);
   &:visited {
-    color: $white;
+    color: $bg-main;
   }
   &:hover {
-    background-color: $white;
+    background-color: $bg-main;
     color: $primary;
   }
 }
 .btn-inverse {
-  background-color: $white;
+  background-color: $bg-main;
   color: $primary;
-  border-color: $white;
+  border-color: $bg-main;
   &:visited {
     color: $primary;
   }
   &:hover {
     background-color: $primary;
-    color: $white;
+    color: $bg-main;
   }
 }
 .btn-success {
   background-color: $success;
-  color: $white;
+  color: $bg-main;
   border-color: $success;
   &:visited {
-    color: $white;
+    color: $bg-main;
   }
   &:hover {
-    background-color: $white;
+    background-color: $bg-main;
     color: $success;
   }
 }
 .btn-warning {
   background-color: $warning;
-  color: $white;
+  color: $bg-main;
   border-color: $warning;
   &:visited {
-    color: $white;
+    color: $bg-main;
   }
   &:hover {
-    background-color: $white;
+    background-color: $bg-main;
     color: $warning;
   }
 }
 .btn-danger {
   background-color: $danger;
-  color: $white;
+  color: $bg-main;
   border-color: $danger;
   &:visited {
-    color: $white;
+    color: $bg-main;
   }
   &:hover {
-    background-color: $white;
+    background-color: $bg-main;
     color: $danger;
   }
 }
 .btn-info {
   background-color: $info;
-  color: $white;
+  color: $bg-main;
   border-color: $info;
   &:visited {
-    color: $white;
+    color: $bg-main;
   }
   &:hover {
-    background-color: $white;
+    background-color: $bg-main;
     color: $info;
   }
 }
