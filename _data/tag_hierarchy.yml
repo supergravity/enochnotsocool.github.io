@@ -1,0 +1,23 @@
+# List of available tags, unlisted will be put under "Others"
+
+
+- title: Recipes
+  img: root.png
+  sub_item:
+      - c++
+      - boost
+      - python
+      - root
+
+- title: C++
+  img: root.png
+  sub_item:
+     - root
+     - boost
+     - python 
+
+- title: sample post
+  img: root.png
+  sub_item:
+     - Root
+     - boost

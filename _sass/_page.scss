@@ -472,20 +472,3 @@ header .entry-meta {
 	@extend .btn;
 }
 
-// Archive time in tags and posts
-.archive {
-   li {
-   font-size: 14pt;
-   margin: 5px;   
-   }
-   h2 {
-      font-size: 20pt;
-      color: $heading-color
-   }
-   a:link    { color: $text-color; }
-   a:visited { color: darken($text-color,20); }
-   a:hover   { color: lighten($text-color,20); }
-   a:active  { color: lighten($text-color,20); }
-}
-
-

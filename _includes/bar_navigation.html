@@ -1,8 +1,8 @@
 <ul class="topbar">	
    <li><a href="{{ site.url }}/">Recent Posts</a></li>
-   <li><a href="{{ site.url }}/about/">About</a></li>
-	<li><a href="{{ site.url }}/posts/">Posts by date</a></li>
-	<li><a href="{{ site.url }}/tags/">Posts by Tags</a></li>
+   <li><a href="{{ site.url }}/pages/about">About</a></li>
+	<li><a href="{{ site.url }}/pages/date">Posts by date</a></li>
+	<li><a href="{{ site.url }}/pages/tags">Posts by Tags</a></li>
 	{% for link in site.data.navigation %}
       {% if link.url contains 'http' %}
 	      {% assign domain = '' %}

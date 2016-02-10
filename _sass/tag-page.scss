@@ -1,0 +1,73 @@
+// Archive time in tags and posts
+.archive {
+   li {
+   font-size: 14pt;
+   margin: 5px;   
+   }
+   h2 {
+      font-size: 20pt;
+      color: $heading-color
+   }
+}
+
+$tag_img_size: 100px;
+
+.main_tag {
+   list-style: none;
+   padding-left: 0;
+
+   margin-bottom: 10px;
+   
+   .main_tag_button {
+      width:100%;
+      height: $tag_img_size;
+      background-color: darken($base-color,3);
+      padding:0;
+      
+      img {
+         vertical-align: middle;
+         width: $tag_img_size;
+         height: $tag_img_size; 
+      }
+
+      span {
+         text-transform: Capitalize;
+         color: $heading-color;
+
+         font-size: 20pt;
+         font-weight: bold;
+         padding-left: 20pt;
+      }
+   }
+
+   .sub_container {
+      display:none; // Hide by default
+      padding-left: $tag_img_size;
+      padding-bottom: 20px;
+
+      background-color: darken($base-color,3);
+   }
+}
+
+.sub_tag {
+   list-style:none;
+   padding: 10px;
+   padding-left: 20pt;
+   background-color: $base-color;
+   
+
+   .sub_tag_button {
+      text-transform: Capitalize;
+      font-size:16pt;
+   }
+
+   .post_container {
+      display: none; // Hide by default
+      li {
+         font: 14pt;
+         padding: 5px;
+      }
+      padding-bottom: 20px;
+   }
+}
+
