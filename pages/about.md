@@ -12,8 +12,11 @@ modified: 2014-12-24
 Finally, I have settle on a media I will be using to document and display my personal thoughts! 
 
 # Contents
-This is a website that I will be using the record random thoughts and note for both personal, work and/or hobby related topics.
-Everything on this website will be public, thus I will avoid using specific names of individuals,
+This 
+is a 
+website 
+that I will be using the record random thoughts and note for both 
+personal, work and/or hobby related topics. Everything on this website will be public, thus I will avoid using specific names of individuals,
 and also avoid posting sensitive, work related results directly on this website.
 
 Regarding posts associated with real-life events and/or issues, I will attempt to fact check as much I needed, 

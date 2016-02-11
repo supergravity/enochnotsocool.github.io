@@ -1,13 +1,35 @@
 # List of available tags, unlisted will be put under "Others"
 
+- title: thoughts
+  img: avatar.png
+  sub_item:
+     - computing
 
 - title: Recipes
-  img: root.png
+  img: code_head_1.png
   sub_item:
       - c++
       - boost
       - python
       - root
+
+- title: Physics
+  img: root.png
+  sub_item:
+     - Particle Physics
+     - Quantum Mechanics
+     - Classical Field Theory
+     - Non Linear Dynamics
+     - Statistical Mechanics
+
+- title: Mathematics
+  img: python.png
+  sub_item:
+     - Statistics
+     - Probability
+     - Special functions
+     - Complex 
+     - Number theory
 
 - title: C++
   img: root.png
@@ -15,6 +37,25 @@
      - root
      - boost
      - python 
+
+- title : python
+  img: python.png
+  sub_item:
+     - pyroot
+     - boost 
+     
+- title : root
+  img : root.png
+  sub_item:
+     - plotting
+     - RooFit
+     - pyroot
+
+- title: linux
+  img: archlinux.png
+  sub_item:
+     - shell
+     - KDE
 
 - title: sample post
   img: root.png
