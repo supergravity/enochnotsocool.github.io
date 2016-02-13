@@ -23,7 +23,7 @@ comments: false
 {% for main_tag in site.data.tag_hierarchy %}
 <li class="main_tag">
    <div class="main_tag_button">
-      <img src="{{site.url}}/images/{{main_tag.img}}"></img>
+      <img src="{{site.url}}/images/icon/{{main_tag.img}}"></img>
       <span>{{ main_tag.title }}</span>
    </div>
    <ul class="sub_container">
@@ -69,7 +69,7 @@ comments: false
 {% endfor %}
 <li class="main_tag">
    <div class="main_tag_button">
-      <img src="{{site.url}}/images/root.png"/>
+      <img src="{{site.url}}/images/icon/others.svg"/>
       <span>Others</span>
    </div>
    <ul class="sub_container">

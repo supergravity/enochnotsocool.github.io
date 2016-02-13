@@ -1,12 +1,12 @@
 # List of available tags, unlisted will be put under "Others"
 
 - title: thoughts
-  img: avatar.png
+  img: thoughts.png
   sub_item:
      - computing
 
 - title: Recipes
-  img: code_head_1.png
+  img: recipe.png
   sub_item:
       - c++
       - boost
@@ -14,7 +14,7 @@
       - root
 
 - title: Physics
-  img: root.png
+  img: physics.png
   sub_item:
      - Particle Physics
      - Quantum Mechanics
@@ -23,7 +23,7 @@
      - Statistical Mechanics
 
 - title: Mathematics
-  img: python.png
+  img: math.png
   sub_item:
      - Statistics
      - Probability
@@ -32,7 +32,7 @@
      - Number theory
 
 - title: C++
-  img: root.png
+  img: c_plus_plus.png
   sub_item:
      - root
      - boost
@@ -57,8 +57,3 @@
      - shell
      - KDE
 
-- title: sample post
-  img: root.png
-  sub_item:
-     - Root
-     - boost
