@@ -5,7 +5,7 @@ description: Mixing the different plotting machanics of pure Root and RooFit
 tags: [root, roofit, plotting,]
 modified: 2016-03-26
 image:
-  feature: thoughts.jpg
+  feature: code_head_1.png
   credit: ensc
 ---
 

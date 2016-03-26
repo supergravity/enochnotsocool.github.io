@@ -10,7 +10,7 @@ image:
   creditlink:
 ---
 
-I guess the best way to say goodbye to vim would be to give a nice list of the things that I found handy in vim. As always with customizable tools like this, there is not definitive answer to how to make vim awesome. I would advise you to look at some basic `vimrc` settings and browse through [vim aweseom](http://vimawesome.com/) to find the things that makes your vim workflow work best for you!
+I guess the best way to say goodbye to vim would be to give a nice list of the things that I found handy in vim. As always with customizable tools like this, there is not definitive answer to how to make vim awesome. I would advise you to look at some basic `vimrc` settings and browse through [vim awesome](http://vimawesome.com/) to find the things that makes your vim workflow work best for you!
 
 # General recomendations
 For those who are still getting familiar with vim, the [interfactive vim tutorial](http://www.openvim.com/) is a good place to get started with the basic commands.
@@ -26,6 +26,8 @@ As my brother said:
 > Vim is not just a program, it is a standard to which people compare what one could expect out of their text editors
 
 So vim is not the "Real men use h-j-k-l" elitist BS that some people like to say, but what is possible in the text editor: Custom key-mapping, macros, block editing, keystroke recording... etc. The true power of vim is not in what you get directly out of the box, but what is potentially possible by the vim configuration settings via the `~/.vimrc` file. In addition to the powerful engines aready given to you by vim (regex, syntax/filetype awareness...etc ), the configuration is programable, so that you could shape vim to suit your own specific needs.
+
+----
 
 ## My `vimrc` settings
 Here is the list of options that I have activated to improve the overall typing experience. If you are highly into text based stuff, I highly recomment checking out some of the options (and related) below to find what works the best for you!
@@ -88,7 +90,9 @@ set shell=zsh\ --login        "" Set shell command environment to match regular 
 
 Note that syntax highlighting would require `filetype on`, but we need to set up the plugin manager first.
 
-## The Plugins
+----
+
+## The Essential Plugins
 Though I say that vim configuration, I haven't actually written any vim scripts myself, you could find a nice tutorial [here](http://learnvimscriptthehardway.stevelosh.com/) though. What I do use are the plugins that are already written by others and do minor settings to make it look better. For a nice list of availiable and actively maintained plugins, check out [vim awesome](vimawesome.org).
 
 The following plugins listed below is what I consider to be essential in my workflow, and editing in vim simply wouldn't be the same without.
@@ -113,7 +117,7 @@ filetype indent on
 
 The lines that needs to be added to vim could be directly found on [vimawesome](https://vimawesome.org).
 
-## Vim Airline - the informative interface
+### Vim Airline - the informative interface
 During editing, you might want to get some useful information about your editing conditions, like your operatin mode, the path of the file you are editing, the tabs you have open, the git branch, the cursor position... etc.
 <figure>
    <img src="http://gdriv.es/ensc_github/vim_airline.png"/>
@@ -124,7 +128,7 @@ While all of this information is availiable by the vim command line, this packag
 
 To use add `Plugin 'bling/air-line'` to the plugin lines, for the better fonts, you might want to install the [powerline fonts](powerline.readthedocs.org/en/master/installation/linux.html) to you fonts (system or otherwise).
 
-## Ultisnip - Programmable snippet insertion
+### Ultisnip - Programmable snippet insertion
 In coding there are typically partterns that will occur over and over again (Class declaration, tags, loops and ifs, comment blocks...) Snippets allow you to add inputs by simple inputs and string substitution so that you don't need to key class names mulitple times. What's more, the output could be programable by python tu change based on you input in various sections!
 
 <figure>
@@ -147,20 +151,20 @@ This is the feature that I miss the most about vim when migrating to [atom](http
 
 ----
 
+## The Nice plugins
 The following are packages that ones that are not commonly used in everyday workflow, But is nice to have around.
 
-
-## Tabular - Aligning on characters
+### Tabular - Aligning on characters
 In the code I'm helping to maintain, there are usually long sections of declaration and assignment, and it helps with my sanity if I could align my code by the `=` operator or other aspects strings in the code!
 
 Add the line `Plugin 'godlygeek/tabular'` to use this plugin, and check out the [vim cast video](http://vimcasts.org/episodes/aligning-text-with-tabular-vim/) to see how to use it!
 
 
-## NerdTree - Displaying the directory structure
+### NerdTree - Displaying the directory structure
 Since vim is command line based and a lot of the work flow would be based around paths, it would be nice that the usre could get a display of the directory sturcture if ever needed to be referenced. Since my discovery of the `tree` command in linux, this task is typically managed via command line. But I do like my a interface open when I work.
 
 
-## YouCompleteMe - Advance auto completion system
+### YouCompleteMe - Advance auto completion system
 This is a syntax aware, content aware, fuzzy matching auto completion system. This plugin is a bit hard to recommend: it's heavy, sluggish with large files, and has a lot of dependencies if you want it to work with self-defined C++ functions. but it works well with a number of other plugins (Ultisnip via supertab), and simply works with most of the suff I expect from a auto-completions system.
 
 ---

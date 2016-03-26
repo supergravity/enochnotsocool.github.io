@@ -6,7 +6,6 @@
 
    {% include browser-upgrade.html %}
    {% include navigation.html %}
-   {% include bar_navigation.html %}
 
    {% if page.image.feature %}
    <div class="entry-header">
@@ -55,7 +54,7 @@
                {% endif %}
                {% if page.share != false %}{% include social-share.html %}{% endif %}
             </footer>
-            {% if page.comments != false %}<div id="comments"></div>{% endif %} 
+            {% if page.comments != false %}<div id="comments"></div>{% endif %}
          </div><!-- /.entry-content -->
          {% if site.related_posts.size > 0 %}{% include read-more.html %}{% endif %}
       </div>
@@ -68,6 +67,6 @@
    </div><!-- /.footer-wrapper -->
 
    {% include scripts.html %}
-   {% if page.comments != false %} {% include comments.html %} {% endif %} 
+   {% if page.comments != false %} {% include comments.html %} {% endif %}
 </body>
 </html>
