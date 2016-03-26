@@ -53,14 +53,14 @@ for( int i = 0 ; i < xframe->numItems() ; ++i ){
 {% endhighlight %}
 But there is a much better way of getting this thing, without having to guess which name corresponds to which object you have just plotted on the `RooPlot` object. By directly getting storing the object after you have called the `plotOn()` method:
 
-{% hightlight c++ %}
+{% highlight c++ %}
 gauss.plotOn(xframe);
 TGraph* gauss_graph = (TGraph*)xframe->getObject( xframe->numItems() - 1  );
 {% endhighlight %}
 
 There is another merit of using this method. You could manually define the plot style using ROOT flavoured methods rather than using stuffing it all in the `plotOn()` methods call!
 
-{% hightlight c++ %}
+{% highlight c++ %}
 gauss_graph->SetFillStyle(3004);
 gauss->SetLineColor( kGreen );
 {% endhighlight %}
@@ -68,7 +68,7 @@ gauss->SetLineColor( kGreen );
 This gives you much more flexibility on the plots you are getting! Since not all [TGraphPainter](https://root.cern.ch/doc/master/classTGraphPainter.html) are not accessable with the RooFit `plotOn` [methods](https://root.cern.ch/doc/master/classRooAbsPdf.html#ae19cd5285edf475b744819b72d3ca517).
 
 So now we could use the `TLegend` object as expected with this method!
-{% hightlight c++ %}
+{% highlight c++ %}
 TLegend l( 0.6, 0.6, 0.9, 0.9);
 l.AddEntry( gauss_graph , "My Description" , "fl" );
 l.Draw();
