@@ -121,6 +121,7 @@ body {
    height: 200%;
    max-height: 400px;
    overflow: hidden;
+   z-index: -1;
    &:after {
       content: '';
       position: absolute;

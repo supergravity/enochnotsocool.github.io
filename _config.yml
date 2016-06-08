@@ -1,10 +1,10 @@
-title:            NotSoCool Doodles 
+title:            ENSC Doodles 
 description:      Writing down various notes and thoughts picked up
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url:              
+url:
 
 # Owner/author information
 owner:
@@ -13,24 +13,24 @@ owner:
   bio:            "A want-to-be Physicist with a strange liking for computing"
   email:          enochnotsocool@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
+  twitter:
   facebook:       enochchen123
   github:         enochnotsocool
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
+  stackexchange:
+  linkedin:
+  instagram:
+  flickr:
+  tumblr:
   google_plus:    +110026444052053563554
 
 # Background image to be tiled on all pages
-background: 
+background:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
+google_analytics:
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Taipei

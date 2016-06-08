@@ -3,7 +3,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 1000;
+	z-index: 10000;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
 	perspective: 1000px;
@@ -47,8 +47,8 @@
 		background: $bg-main;
 		top: 10px;
 		left: 16%;
-		box-shadow: 
-			0 10px 0 $bg-main, 
+		box-shadow:
+			0 10px 0 $bg-main,
 			0 20px 0 $bg-main;
 	}
 	button.dl-active {
@@ -167,10 +167,10 @@
 		display: none;
 	}
 }
-/* 
+/*
 When a submenu is openend, we will hide all li siblings.
 For that we give a class to the parent menu called "dl-subview".
-We also hide the submenu link. 
+We also hide the submenu link.
 The opened submenu will get the class "dl-subviewopen".
 All this is done for any sub-level being entered.
 */

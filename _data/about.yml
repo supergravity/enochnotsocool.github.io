@@ -1,0 +1,49 @@
+Basic Info:
+   Name: Enoch Chen
+   Year: 1993
+   Position: Taipei, Taiwan, the Earth, The Solar System, The Milky Way, the Virgo Cluster, the Virgo Super cluster, The universe
+
+
+experiences :
+   - National Taiwan University, Department of Physics:
+      url : http://www.ntu.edu.tw/
+      years: Sep, 2011 -
+      description: Majored in Physics, attended advanced courses including quantum field theory. Took specialized course in Data Structure and Programming in the Department of Electrical Enginnering.
+
+   - National Luodong Senior High School:
+      url : http://www.ltsh.ilc.edu.tw/bin/home.php
+      years: Sep, 2008 - Jul, 2011
+      description:
+
+Tools:
+   Computing/Programming:
+      C++:
+         since: 2008
+         level: experienced
+      Python:
+         since: 2013
+         level: intermediate
+      HTML/CSS:
+         since: 2012
+         level: intermediate
+      Javascript:
+         since: 2016
+         level: beginner
+      Git Workflow:
+         since: 2014
+         level: beginner
+      Latex/Tex:
+         since: 2012
+         levle: intermediate
+
+Academic Interests:
+   - Particle Physics
+   - Non-linear dynamics
+   - Scientific programming
+   - Free and Open Source software
+
+Recreational interests:
+   - Choral Music
+   - Table Tennis
+   - MOBA FPS
+   - Open world games
