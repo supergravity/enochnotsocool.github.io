@@ -1,0 +1,64 @@
+---
+layout: page
+title: ENSC Specs Sheet
+comments: false
+modified: 2016-06-08
+---
+
+<h1>Basic Information</h1>
+
+
+<h1>Experience</h1>
+
+{% for exp in  site.data.about.experiences %}
+   <div class="exp_container">
+      <div class="exp_img">
+         <img src="{{exp.img}}" alt="{{exp.name}}"/>
+      </div>
+      <div class="exp_text">
+         <span class="exp_title">
+            <a href="{{exp.url}}" class="exp_name">{{exp.name}}</a><br />
+            <a class="exp_year">{{exp.years}}</a> <br />
+         </span>
+         <p class="exp_desc">
+            {{exp.description}}
+         </p>
+      </div>
+   </div>
+{% endfor %}
+
+
+
+<h1>Tools/Skills</h1>
+
+<div class="tool_master">
+{% for tool in site.data.about.tools %}
+   <div class="tool_container">
+      <span class="tool_title">
+         <a class="tool_name">{{tool.name}}</a>
+         <a class="tool_year">(
+         {% assign year_count = 'now' | date: "%Y" | minus: tool.since %}
+         {%if year_count < 1 %}
+            &lt; 1
+         {% elsif year_count > 5 %}
+            + 5
+         {% else %}
+            {{ year_count }}
+         {% endif %} yrs.)
+         </a>
+         <a class="tool_level">
+         {% assign inv_count = site.data.about.tools_max_level | minus: tool.level %}
+         {% assign count = tool.level %}
+         {% for i in (1..inv_count) %} &#9734; {% endfor %}
+         {% for i in (1..count) %} &#9733; {% endfor %}
+         </a>
+      </span></br>
+      <div class="tool_description">
+         <p>
+         {{tool.description}}   
+         </p>
+      </div>
+   </div>
+{% endfor %}
+
+</div>

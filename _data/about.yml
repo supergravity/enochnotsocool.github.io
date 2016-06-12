@@ -4,37 +4,50 @@ Basic Info:
    Position: Taipei, Taiwan, the Earth, The Solar System, The Milky Way, the Virgo Cluster, the Virgo Super cluster, The universe
 
 
-experiences :
-   - National Taiwan University, Department of Physics:
+experiences:
+   -  name: National Taiwan University, Department of Physics
+      img: http://www.ntu.edu.tw/images/inner/emblem_1.png
       url : http://www.ntu.edu.tw/
-      years: Sep, 2011 -
-      description: Majored in Physics, attended advanced courses including quantum field theory. Took specialized course in Data Structure and Programming in the Department of Electrical Enginnering.
+      years: Sep, 2011 - Today
+      description: Majored in physics, attended advanced courses including quantum field theory and statistical mechanics. Took specialized course in Data Structure and Programming in the Department of Electrical Enginnering.
 
-   - National Luodong Senior High School:
+   -  name: National Lou-Tung Senior High School
+      img: http://120.101.70.8/a/badge/ltshbadge.jpg
       url : http://www.ltsh.ilc.edu.tw/bin/home.php
       years: Sep, 2008 - Jul, 2011
-      description:
+      description: Attended science and engineering experiment program.
 
-Tools:
-   Computing/Programming:
-      C++:
-         since: 2008
-         level: experienced
-      Python:
-         since: 2013
-         level: intermediate
-      HTML/CSS:
-         since: 2012
-         level: intermediate
-      Javascript:
-         since: 2016
-         level: beginner
-      Git Workflow:
-         since: 2014
-         level: beginner
-      Latex/Tex:
-         since: 2012
-         levle: intermediate
+tools_max_level: 7
+
+tools:
+   - name: C++
+     since: 2008
+     level: 5
+     description: Familiar with object orientated programming syntax, basic knowledge of fundemental computing data types and memory interaction/handling concepts and their implementation in C++.
+
+   - name: Python
+     since: 2013
+     level: 4
+     description: Familiar with python flavoured object orientated programming syntax. Has experience with C++ / python interfacing
+
+   - name: Latex/Tex
+     since: 2012
+     level: 4
+     description: Experienced with mathematical element creation with packages such as tikz, basic knowledge of layout formatting.
+
+   - name: HTML/CSS
+     since: 2012
+     level: 3
+     description: Basic knowledge of layout formatting.
+
+   - name: Javascript
+     since: 2016
+     level: 1
+
+   - name: Git Workflow
+     since: 2014
+     level: 2
+
 
 Academic Interests:
    - Particle Physics

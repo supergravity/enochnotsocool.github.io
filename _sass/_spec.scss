@@ -1,0 +1,74 @@
+// Styling information for specs pages
+
+
+$exp_logo_size: 120px;
+.exp_container{
+   padding-bottom: 30px;
+   overflow: auto;
+   .exp_img { //Place Log image on left with fixed width
+      width: 20%;
+      float:left;
+      height: 100%;
+      img {
+         padding: 10px;
+         width: $exp_logo_size;
+      }
+   }
+
+   .exp_text {
+      width: 75%;
+      float: right;
+      .exp_title{
+         background-color: darken($base-color,3);
+         padding-bottom: -10px;
+         .exp_name{
+            font-size: 1.1em;
+            font-weight: bold;
+            float: left;
+         }
+
+         .exp_year {
+            float: right;
+            color: darken($text-color,15);
+         }
+      }
+
+      p{
+         text-align: justify;
+         margin-top: 0px;
+         padding-top: 0px;
+      }
+   }
+}
+
+
+.tool_master{
+   width:100;
+   display: inline-block;
+   .tool_container{
+      width:45%;
+      display: inline-block;
+      background-color: darken($base-color,1);
+      padding: 5px;
+      margin: 10px;
+
+      .tool_name{
+         float:left;
+         font-weight: bold;
+         font-size: 1.1em;
+      }
+
+      .tool_year{
+         padding-left: 10px;
+         font-size: 0.8em;
+         vertical-align: bottom;
+         color: darken($text-color,15);
+      }
+
+      .tool_level{
+         font-size: 0.8em;
+         vertical-align: bottom;
+         float:right;
+      }
+   }
+}

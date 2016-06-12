@@ -8,17 +8,17 @@ $tag_img_size: 100px;
 
    margin-bottom: 20px;
    margin-top: 20px;
-   
+
    .main_tag_button {
       width:100%;
       height: $tag_img_size;
       background-color: darken($base-color,3);
       padding:0;
-      cursor: pointer;   
+      cursor: pointer;
       img {
          vertical-align: middle;
          width: $tag_img_size;
-         height: $tag_img_size; 
+         height: $tag_img_size;
       }
 
       span {
@@ -43,7 +43,7 @@ $tag_img_size: 100px;
    padding: 10px;
    padding-left: 20pt;
    background-color: $base-color;
-   
+
    .sub_tag_button {
       text-transform: Capitalize;
       font-size:16pt;
