@@ -9,7 +9,7 @@ image:
   credit: ensc
 ---
 
-Prior to today, I woudl normally commented on what is taught in school before university, that the material doesn't serve any purpose to bridge the gap between general education and advanced knowledge, being stuck in the middle ground of being too mundane to anyone is interested in pursuing a career and too tedious for someone that isn't.
+Prior to today, I would normally commented on what is taught in school before university, that the material doesn't serve any purpose to bridge the gap between general education and advanced knowledge, being stuck in the middle ground of being too mundane to anyone is interested in pursuing a career and too tedious for someone that isn't.
 
 But recently I have been having second thoughts on this statement. The real problem is that we are not used to appreciating the thing we are force to learn in a light of what we could appreciate.  So we know that a pulley/lever/gear system does this and that. We know that this guy lived so many years ago and did this and that. We know that we could define a congruence triangle using this angle and that line. We know that if we go to this part on the globe we would see this and that climate...
 
