@@ -20,7 +20,7 @@ Our usual form of conclusion is we say "it is highly unlikely that there is a pa
 
 In this diagram we say that:
 
-* Everything observed (black dots) is within 2 $$sigma$$ of the standard model(double coloured band)
+* Everything observed (black dots) is within 2 $$\sigma$$ of the standard model(double coloured band)
 * We could say that there is no apparent new $$gg$$ resonance with masses smaller than $$3TeV$$ with the colour-octet scalar model (where the pink line intersects the band. )
 
 I wanted to quickly go over what is being calculated and why we interpret it as such.
@@ -50,32 +50,34 @@ For our actual experiment for $$N$$ tosses of real, physical magic coin, we get 
 
 
 ### Defining how "non-standard" our observed result is
-Now, for a given $$\theta$$ we are trying to validate/disprove, we try to following distribution function:
+Now, for a given $$\theta$$ we are trying to validate/disprove, we are interested in to probability distribution functions:
 
->> $$P(y \rvert \theta_\text{act} , \theta_{alt})$$ the probability distribution of getting an observed $$y$$, with the actual unfairness of the coin being $$\theta_\text{act}$$ and the testing theory being the unfairness being $$\theta_{alt}$$.
+>> $$P_\text{null}( y \rvert \theta_{alt})$$: The probability of observing $$y$$ with a given testing $$\theta_\text{alt}$$ when the coin has a actual $$\theta=\theta_\text{null}$$
 
-We are, of course, mainly interested in two distributions of what the actual unfairness is: one for the standard model $$\theta_\text{act}=0$$ and the other being $$\theta_\text{alt}$$. Using these two distributions, we could begin to see how we could interpret the experimental results. If the observed $$y$$ is closer to the distribution from the standard model, it is likely that the standard model is true and vice-versa. It could also tell you when your experiment might be insufficient to distinguish between the new and old if both theories gives very similar distributions.
+>> $$P_\text{alt} (y \rvert \theta_{alt})$$: The probability of observing $$y$$ with a given testing $$\theta_\text{alt}$$ when the coin has a actual $$\theta=\theta_\text{alt}$$
+
+Using these two distributions, we could begin to see how we could interpret the experimental results. If the observed $$y$$ is closer to the central value of $$P_\text{null}$$, it is likely that the standard model is true and vice-versa. It could also tell you when your experiment might be insufficient to distinguish between the new and old if the two distribution have significant overlap.
 
 <figure>
 	<img src="{{sit.url}}/images/figures/2016-07-07-Distribution.png" alt="">
 	<figcaption>Example taken from Physics Colloquium (2012) @ NTU by Kei-Feng Chen</figcaption>
 </figure>
 
-We could also see that due to the definition of $$P$$, the $$P(y\rvert 0,\theta_{alt})$$, will typically have a higher mean that $$P(y\rvert \theta_\text{alt},\theta_\text{alt})$$
+We could also see that due to the definition of $$y$$ and $$P$$, the $$P_\text{null}$$, will typically have a higher mean that $$P_\text{alt}$$.
 
-For each observed $$y_0$$ value, we could define the confidence level of this event to be standard model $$CL_b$$ (how much this indicates that the standard model is correct) as,
-
-$$
-CL_b \equiv \int_{y_0}^\infty P(y\rvert 0 , \theta_\text{alt}) dy
-$$
-
-And the confidence level of this event to **NOT** be the alternative model to be $$CL_\text{s+b}$$ as:
+For each observed $$y_0$$ value, we could define $$CL_b$$ as
 
 $$
-CL_\text{s+b} \equiv \int_{y_0}^\infty P(y \rvert \theta_\text{alt} , \theta_\text{alt}) dy
+CL_b(y_0 , \theta_\text{alt}) \equiv \int_{y_0}^\infty P_\text{null}(y\rvert \theta_\text{alt}) dy
 $$
 
-The discriminating value should be
+And $$CL_\text{s+b}$$ as:
+
+$$
+CL_\text{s+b}(y_0 , \theta_\text{alt}) \equiv \int_{y_0}^\infty P_\text{alt}(y \rvert \theta_\text{alt}) dy
+$$
+
+The discriminating value $$CL_s$$ is called the **confidence level** of this observed $$y_0$$ to a standard model event as
 
 $$
 CL_s(y_0,\theta_\text{alt}) = \frac{CL_\text{s+b}}{CL_b}
@@ -86,22 +88,29 @@ $$
 	<figcaption>Example taken from Physics Colloquium (2012) @ NTU by Kei-Feng Chen</figcaption>
 </figure>
 
-For if we observe a $$y_0$$ with a small $$CL_s$$, then we could say that the alternative model is much more likely to be correct. We typically adopt the convention of $$CL_s$$=0.05 being "statistically significant" and $$CL_s=10^{-6}$$ being "a new discovery".
+Since we could see that if this value is small it means two things:
+
+   * This observed results lies closer towards the standard model distribution.
+   * The two distributions are far apart enough for small values to occur.
+
+The connection of this dicrimination value and the statistical intepretation of **confidence level** would be an article for next time.
+
+We are going to take the convention of the scientific community of saying that if $$CL_s <0.05$$, the results are "statistically significant"; and if $$CL_s < 10^{-6}$$, the results indicate "a new discovery".
 
 ### Defining exclusion limit
-For each $$y_0$$ value, there is a corresponding value of $$\theta_\text{ex}(y_0)$$ where $$CL = 0.05$$. Meaning that if we observe this $$y_0$$, then we can not tell if it is a statistical fluctuation of the standard model, of it id due to an alternative model with $$\theta$$ smaller than $$\theta_\text{ex}$$! So this our 95% confidence exclusion limit for a single observation.
+For each $$y_0$$ value, there is a corresponding value of $$\theta_\text{ex}(y_0)$$ where $$CL = 0.05$$. Meaning that if we observe this $$y_0$$, then we can not tell if it is a statistical fluctuation of the standard model, of if it due to an alternative model with $$\theta < \theta_\text{ex}$$! So this our 95% confidence exclusion limit for a single observation.
 
-Now from our theory/simulation, we could get the distribution of this exclusion $$\theta$$ **if the standard model is right**! Typically, we plot this as a double banded region with $$\theta$$ as the $$y$$ axis.
+Now from our theory/simulation, we could get the distribution of this $$\theta_\text{ex}$$ **if the standard model is right**! Typically, we plot this as a double banded region with $$\theta$$ as the $$y$$ axis.
 
 <figure>
 	<img src="{{sit.url}}/images/figures/2016-07-07-ConfidenceLevel_Cont.png" alt="">
 	<figcaption>Confidence levels of coin toss experiments with 10 coin tosses, Example taken from Physics Colloquium (2012) @ NTU by Kei-Feng Chen</figcaption>
 </figure>
 
-In the above diagram, we say that by our 10 coin toss experiment, assuming the standard model is right:
+In the above diagram, we say that by our 10 coin toss experiment, with the assumption that the standard model is right:
 
 * We could exclude the models with $$\theta > 0.59$$ with 95% confidence.
-* Any $$\theta_{ex}$$ obtained from real experiment has a 95% chance to fall within the double band region.
+* Any $$\theta_{ex}$$ obtained from a real experiment has a 95% chance to fall within the double band region.
 
 So returning to our new coin experiment . If the theorists, say that the new coins have a unfairness factor of $0.95$, we could say we are able to verify this experiment with the 10 toss-budget that we have, but if they say the proposed unfairness factor is $$0.2$$, we say that we cannot would not be able to exclude this theory with 10 coin toss alone.
 
