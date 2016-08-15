@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction to CMS Software
-description: In step by step introduction to analysis coding the CMSSW
+description: A step-by-step introduction to writing analysis coding the CMSSW
 tags: [analysis, c++, CMSSW]
 modified: 2016-08-13
 image:
