@@ -13,7 +13,7 @@ In high energy physics, what we typically analysis is a list of events, extract 
 
 
 ## Seeing what is available in an file
-The EDM files varies from user to user. There are official "tiers" that contain a general list of physical "objects" that annalists are typically interested. And there could be user-made EDM files, where the property of the event is condensed down to a single `double` variable of interested. We are going to provide a dummy EDM file [here](some link) to use as an example, and give instruction to find official EDM files that you should be able to get is you have access to a CMSSW environment.
+The `EDM` files varies from user to user. There are official "tiers" that contain a general list of physical "objects" that annalists are typically interested. And there could be user-made EDM files, where the property of the event is condensed down to a single `double` variable of interested. We are going to provide a dummy `EDM` file [here](https://drive.google.com/open?id=0Bw8_U9a0g9nHUkg1eU1ZVEh0TTQ) to use as an example, and give instruction to find official EDM files that you should be able to get is you have access to a CMSSW environment.
 
 As always, move to a `CMSSW/src` directory and load the environment by `cmsenv`. To look what is variables are available in each event, run the command
 ```
@@ -24,9 +24,10 @@ You should get an output like
 ```
 Type       Module     Label      Process   
 -------------------------------------------
-double     "myprod"   "myrand"   "Dummy"   
+double     "myprod"   "Gauss"    "Dummy"   
+int        "myprod"   "Poisson"  "Dummy"   
 ```
-The first column is the C++ type needed to read the variable. The last three strings are related with how this variable was produced. You can think of it as three magic strings that allows you to acces the variable. This dummy file isn't very interesting. It just contains a single `double` variable. The outputs of a standard edm files is much more interesting:
+The first column is the C++ type needed to read the variable. The last three strings are related with how this variable was produced. You can think of it as three magic strings that allows you to acces the variable. This dummy file isn't very interesting. Each event contains a `double` variable that is generated according to a Gaussian distribution and an `int` generated according to a Possion distribution. The outputs of a standard `EDM` files is much more interesting:
 
 ```
 Type                                  Module                      Label             Process   
@@ -59,7 +60,7 @@ int main()
    // fwlite::ChainEvent ev ( {"file_1", "file_2", "file_3", ...} ); // For multiple files
    fwlite::Handle<double> mydouble;
    for( ev.toBegin() ; !ev.atEnd() ; ++ev ){
-      mydouble.getByLabel( ev , "myprod",   "myrand",   "Dummy"   );
+      mydouble.getByLabel( ev , "myprod",   "Gaussian",   "Dummy"   );
       std::cout << *mydouble << std::endl;
    }
 }
